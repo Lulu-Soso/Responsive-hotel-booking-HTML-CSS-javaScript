@@ -223,7 +223,7 @@ header .search-bar-container label:hover {
   position: relative;
   z-index: 0;
 }
-.home .content{
+.home .content {
   text-align: center;
 }
 .home .content h3 {
@@ -274,7 +274,7 @@ header .search-bar-container label:hover {
   gap: 1.5rem;
   align-items: center;
 }
-.book .row .img img{
+.book .row .img img {
   width: 100%;
   height: 500px;
 }
@@ -284,7 +284,7 @@ header .search-bar-container label:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
-.book .row form .inputBox{
+.book .row form .inputBox {
   padding: 0.5rem 0;
 }
 .book .row form .inputBox input {
@@ -345,8 +345,8 @@ header .search-bar-container label:hover {
 }
 .packages .box-container .box .content .price span {
   color: #666;
- font-size: 1.5rem;
- text-decoration: line-through;
+  font-size: 1.5rem;
+  text-decoration: line-through;
 }
 /**************************************** Packages End ****************************************/
 
@@ -356,7 +356,7 @@ header .search-bar-container label:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.services .box-container .box{
+.services .box-container .box {
   flex: 1 1 45rem;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -395,12 +395,12 @@ header .search-bar-container label:hover {
   height: 25rem;
   position: relative;
 }
-.gallery .box-container .box img{
+.gallery .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.gallery .box-container .box .content{
+.gallery .box-container .box .content {
   position: absolute;
   top: -100%;
   left: 0;
@@ -411,21 +411,97 @@ header .search-bar-container label:hover {
   padding: 2rem;
   padding-top: 5rem;
 }
-.gallery .box-container .box:hover .content{
+.gallery .box-container .box:hover .content {
   top: 0;
 }
-.gallery .box-container .box .content h3{
+.gallery .box-container .box .content h3 {
   font-size: 2.5rem;
   color: var(--orange);
 }
-.gallery .box-container .box .content p{
+.gallery .box-container .box .content p {
   font-size: 1.5rem;
   color: #eee;
   padding: 0.5rem 0;
 }
 /**************************************** Gallery End ****************************************/
 
+/**************************************** Review ****************************************/
+.review .review-slider {
+  padding-bottom: 2rem;
+}
+.review .box {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.review .box img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.review .box h3 {
+  color: #333;
+  font-size: 2.5rem;
+}
+.review .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.review .box .stars i {
+  color: var(--orange);
+  font-size: 1.7rem;
+}
+/**************************************** Review End ****************************************/
+
+/**************************************** Contact ****************************************/
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.contact .row .img {
+  flex: 1 1 35rem
+}
+.contact .row .img img {
+  width: 100%;
+  height: 500px;
+}
+.contact .row form {
+  flex: 1 1 35rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+.contact .row form textarea {
+  height: 27rem;
+  resize: none;
+  width: 100%;
+}
+/**************************************** Contact End ****************************************/
+
+
+/***********************************************************************************************/
 /**************************************** Media Queries ****************************************/
+/***********************************************************************************************/
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -473,5 +549,8 @@ header .search-bar-container label:hover {
   }
   .heading span {
     font-size: 2.5rem;
+  }
+  .contact .row form .inputBox input {
+    width: 100%;
   }
 }
