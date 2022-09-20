@@ -48,7 +48,7 @@ var swiper = new Swiper(".review-slider", {
   loop: true,
   autoplay: {
     delay: 2500,
-    disableOnIneraction: false,
+    disableOnInteraction: false,
   },
   breakpoints: {
     640: {
@@ -68,7 +68,7 @@ var swiper = new Swiper(".brand-slider", {
   loop: true,
   autoplay: {
     delay: 2500,
-    disableOnIneraction: false,
+    disableOnInteraction: false,
   },
   breakpoints: {
     450: {
